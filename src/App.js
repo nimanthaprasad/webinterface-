@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Loginpage from './components/loginpage';
+import Fpassword from './page/fpassword';
+import Cheakpassword from './page/cheakpassword';
+import profile from "./image/image2.png"
+import {BrowserRouter as Router ,Route,Routes} from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+<div>
+  <Routes>
+    
+  <Route path="/" element={<Loginpage />}> </Route>
+  </Routes>
+  <Routes>
+  <Route path="/fpassword" element={<Fpassword />}> </Route>
+  </Routes>
+  <Routes>
+  <Route path="/cheak" element={<Cheakpassword />}> </Route>
+  </Routes>
+</div>
+</Router>
+    
   );
 }
 
