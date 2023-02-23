@@ -33,6 +33,7 @@ function Loginpage() {
            </div>
            <div className="login-button">
                 <button> Login </button>
+                <button> Nima</button>
            </div>
            <div>
                 <p className="link"> 
